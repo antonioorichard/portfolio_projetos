@@ -77,6 +77,21 @@ html {
 *, *:before, *:after {
   box-sizing: inherit; }
 
+/* Container */
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%; }
+  @media screen and (max-width: 1280px) {
+    .container {
+      max-width: 1000px; } }
+  @media screen and (max-width: 1140px) {
+    .container {
+      width: 95%; } }
+
+
+/* Main */
+
 body {
   background: #ffffff; }
   body.is-preload *, body.is-preload *:before, body.is-preload *:after, body.is-resizing *, body.is-resizing *:before, body.is-resizing *:after {
