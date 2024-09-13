@@ -60,3 +60,49 @@
 	@import 'layout/banner';
 	@import 'layout/footer';
 	@import 'layout/menu';
+
+
+/* Container */
+
+	.container {
+		margin: 0 auto;
+		max-width: calc(100% - 50px);
+		width: 1200px;
+
+		&.medium {
+			width: (1200px * 0.75);
+		}
+
+		@include breakpoint('<=xlarge') {
+			width: 1200px;
+
+			&.medium {
+				width: (1200px * 0.75);
+			}
+		}
+
+		@include breakpoint('<=large') {
+			width: 960px;
+
+			&.medium {
+				width: (960px * 0.75);
+			}
+		}
+
+		@include breakpoint('<=medium') {
+			width: 100%;
+
+			&.medium {
+				width: (100% * 0.75);
+			}
+		}
+
+		@include breakpoint('<=small') {
+			width: 100%;
+			max-width: calc(100% - 30px);
+
+			&.medium {
+				width: 100%;
+			}
+		}
+	}
